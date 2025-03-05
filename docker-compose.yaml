@@ -1,0 +1,9 @@
+name: booking-order-app
+services:
+  user-service:
+    container_name: user-service
+    image: sikoding20/user-service:17
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
