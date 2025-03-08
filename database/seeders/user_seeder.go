@@ -16,8 +16,8 @@ func RunUserSeeder(db *gorm.DB) {
 		Name:        "Administrator",
 		Username:    "admin",
 		Password:    string(password),
-		PhoneNumber: "085712345678",
-		Email:       "admin@gmail.com",
+		PhoneNumber: "082295293138",
+		Email:       "rifairizqi.hao@gmail.com",
 		RoleID:      constants.Admin,
 	}
 

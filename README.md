@@ -1,3 +1,11 @@
+<h3>Kombinasi membuat x-api-key untuk postman</h3>
+
+- nama service
+- signature key pada service tesebut
+- unixtimestamp
+
+`service-name:signature_key:unixtimestamp`
+
 <h3>User Service</h3>
 
 <h3>Description</h3>
