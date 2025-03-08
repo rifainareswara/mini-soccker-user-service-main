@@ -25,7 +25,7 @@ docker-build: ## Build the Docker image with a specified tag
 		echo "$(YELLOW)Error: Please specify the 'tag' parameter, e.g., make docker-build tag=1.0.0$(RESET)"; \
 		exit 1; \
 	fi
-	docker build --platform linux/amd64 -t sikoding20/user-service:$(tag) .
+	docker build --platform linux/amd64 -t rnrifai/mini-soccker-user-service:$(tag) .
 	@echo "$(GREEN)Docker image built with tag '$(tag)'$(RESET)"
 
 docker-push: ## Build the Docker image with a specified tag
@@ -34,5 +34,5 @@ docker-push: ## Build the Docker image with a specified tag
 		echo "$(YELLOW)Error: Please specify the 'tag' parameter, e.g., make docker-push tag=1.0.0$(RESET)"; \
 		exit 1; \
 	fi
-	docker push sikoding20/user-service:$(tag)
+	docker push rnrifai/mini-soccker-user-service:$(tag)
 	@echo "$(GREEN)Docker image built with tag '$(tag)'$(RESET)"

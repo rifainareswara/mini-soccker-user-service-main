@@ -2,11 +2,7 @@ name: mini-soccker-booking-order-app
 services:
   user-service:
     container_name: user-service
-    platform: linux/amd64
-    #image: rnrifai/mini-soccker-user-service:1
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: rnrifai/mini-soccker-user-service:1
     ports:
       - "8001:8001"
     env_file:
